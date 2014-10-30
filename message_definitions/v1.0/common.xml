@@ -2540,5 +2540,13 @@
                <field type="uint8_t" name="ind">index of debug variable</field>
                <field type="float" name="value">DEBUG value</field>
           </message>
+       <message id="255" name="CA_TRAJECTORY">
+         <description>FOLLOW THE ADD UORB TUTORIAL.</description>
+         <field type="uint64_t" name="timestamp">Timestamp (milliseconds since system boot)</field>
+         <field type="uint64_t" name="time_start_usec">starting time of the trajectory.</field>
+         <field type="uint64_t" name="time_stop_usec">stopping time of the trajectory.</field>
+         <field type ="float[28]" name="coefficients">coefficients of the polunomial trajectory</field>
+         <field type ="uint16_t" name="seq_id">sequence id of the sent trajectory piece</field>
+       </message>
      </messages>
 </mavlink>
